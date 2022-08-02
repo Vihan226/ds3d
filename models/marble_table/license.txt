@@ -1,0 +1,11 @@
+Model Information:
+* title:	Marble Table
+* source:	https://sketchfab.com/3d-models/marble-table-566854d0d384463ebde7fa971c96257e
+* author:	Alimoğlu - Marble & Granite (https://sketchfab.com/alimoglu)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Marble Table" (https://sketchfab.com/3d-models/marble-table-566854d0d384463ebde7fa971c96257e) by Alimoğlu - Marble & Granite (https://sketchfab.com/alimoglu) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

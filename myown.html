@@ -5,15 +5,43 @@
   <body>
     <a-scene  background="color: #000000">
 
-        <a-entity position="0 0 15">
-            <a-camera></a-camera>
+       <!--real height for camera is 5-->
+          <a-camera position="0 5 10"></a-camera>
+        
+
+        <a-box position="-50 9 -50 " height="20" width="10" rotation="0 0 0" src="https://th.bing.com/th/id/R.ca098a642b3cd0b3c452f56bc51988e4?rik=IuiNXEnsOTD7eQ&pid=ImgRaw&r=0"></a-box>
+        <a-box position="-1.5 2.5 -10"  height="8" width="12" rotation="0 0 0"  src="https://th.bing.com/th/id/R.a3f153d9d15d5cbf778b2387c037e20e?rik=%2f0NeLVvMSeGdwQ&pid=ImgRaw&r=0"></a-box>
+        <a-box position="-3 2 -6"  height="6" width="10" rotation="0 0 0"  src="https://th.bing.com/th/id/R.2889e9740abe58240049b329faf7174c?rik=4mNCr0ERmIDuOw&riu=http%3a%2f%2fwww.margraf.it%2fwp-content%2fuploads%2f2015%2f06%2fbianco-carrara-c.jpg&ehk=l0qjh5c5SYeMHVuKuTI%2b04vWDJ1EuzhJDI28o4YVLtI%3d&risl=&pid=ImgRaw&r=0"></a-box>
+        <a-plane src="https://th.bing.com/th/id/R.783bfa9d1f52ec6db296997fae55cb49?rik=BJpEYnrxUkOnsA&riu=http%3a%2f%2fwww.victorex.com.my%2fimg%2fphotos%2f2376902266.jpg&ehk=ADOYbtw9Dwhykm8K6RTcyyT4NS3HSkwvFdBQGs9H9lg%3d&risl=&pid=ImgRaw&r=0" height="100" width="150" rotation="-90 0 0"></a-plane>
+        <a-sky position="200 -10 -300" rotation="0 -100 0" src="https://th.bing.com/th/id/R.4c6e44f698b3414664a3e97dfb842857?rik=p35%2bjzuqbZlDiw&pid=ImgRaw&r=0"></a-sky> 
+    
+
+
+                  <a-assets timeout="10000">
+
+                    <a-asset-item id="marble_table" src="models/marble_table/scene.gltf"></a-asset-item>
+
+                    <!--ping pong made by bianco carrara-->
+                    <a-asset-item id="ping_pong" src="models/ping_pong/scene.gltf"></a-asset-item>
+
+
+                    
+                  </a-assets>
+      <a-entity  position="5 0 -5"  rotation="0 90 0">
+        <a-entity>
+          <a-entity position="-1 -6 4" rotation="0 90 0" scale="5 5 5" gltf-model="#marble_table" shadow="cast: true;">
+          </a-entity>
         </a-entity>
 
-        <a-box position="-50 10 -50 " height="20" width="10" rotation="0 0 0" src="https://th.bing.com/th/id/R.ca098a642b3cd0b3c452f56bc51988e4?rik=IuiNXEnsOTD7eQ&pid=ImgRaw&r=0"></a-box>
-        <a-box position="-1.5 2.5 -10"  height="8" width="12" rotation="0 0 0"  src="https://th.bing.com/th/id/R.ddb377c279a693aa684bff657c610d63?rik=YaVnNw1%2fS0Haxg&pid=ImgRaw&r=0"></a-box>
-        <a-box position="-3 2 -6"  height="6" width="10" rotation="0 0 0"  src="https://th.bing.com/th/id/OIP.mNnh6VogEPsS-hWdeM9mawHaE4?pid=ImgDet&rs=1"></a-box>
-        <a-plane src="https://images.unsplash.com/photo-1541140134513-85a161dc4a00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8Y29uY3JldGUlMjB0ZXh0dXJlfHwwfHx8fDE2MjY3OTIzNjI&ixlib=rb-1.2.1&q=80&w=1080" height="100" width="100" rotation="-90 0 0"></a-plane>
-        <a-sky position="200 -10 -300" rotation="0 -100 0" src="https://static.vecteezy.com/system/resources/previews/000/518/845/original/vector-black-background-with-light-boxes-on-ceiling-abstract-gradient-studio-and-wall-texture.jpg"></a-sky> 
-    </a-scene>
+        <!--ping pong made by bianco carrara-->
+        <a-entity>
+          <a-entity position="-1.2 3 4" rotation="0 0 0" scale="5 5 5" gltf-model="#ping_pong" shadow="cast: true;">
+          </a-entity>
+        </a-entity>
+
+      </a-entity>
+        
+
+      </a-scene>
   </body>
 </html>
